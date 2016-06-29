@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hot Peppers</title>
+		<link rel="stylesheet" href="css/style.css"/>
+		<!-- <link rel="stylesheet" href="css/font-awesome.css"/>   -->
+	<!-- 	<link rel="stylesheet" href="css/owl.carousel.css"/> -->
+	<!-- <script src="https://use.fontawesome.com/18ee3729a7.js"></script> -->  
+
+		<script src="js/jquery-1.12.3.min.js"></script> 
+	
+		<script src="js/segment.min.js"></script>
+		<script src="js/ease.min.js"></script>
+ 
+		<script src="js/owl.carousel.min.js"></script>  
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+		<script type="text/javascript" src="js/slick.min.js"></script>
+
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="header_wrapper">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html">
+						<img class="logo_white" src="img/logo_white.png" alt="Hot Peppers"/> 
+						<img class="logo_black" src="img/logo_black.png" alt="Hot Peppers"/> 
+					</a>
+				</div>
+		
+				<div id="menu_icon_wrapper" class="menu_icon_wrapper" style="visibility: hidden">
+					<svg width="1000px" height="1000px">
+						<path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+						<path id="pathB" d="M 300 500 L 700 500"></path>
+						<path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+					</svg>
+					<button id="menu_icon_trigger" class="menu_icon_trigger"></button>
+				</div> 
+
+				
+			</div>
+
+			<div class="nav_wrapper">
+				<ul class="nav">
+					<li class="nav_item">						
+						<a href='#' class="nav_item_link">Home</a>						
+					</li>
+					<li class="nav_item">						
+						<a href='#' class="nav_item_link">About</a>						
+					</li>
+					<li class="nav_item">						
+						<a href='#' class="nav_item_link">Portfolio</a>						
+					</li>
+					<li class="nav_item">						
+						<a href='#' class="nav_item_link">Blog</a>						
+					</li>
+					<li class="nav_item">						
+						<a href='#' class="nav_item_link">Contacts</a>						
+					</li>					
+				</ul>
+
+				<ul class="social">
+					<li class="social_item facebook"><a href="#"></a></li>
+					<li class="social_item instagram"><a href="#"></a></li>
+					<li class="social_item twitter"><a href="#"></a></li>
+				</ul>
+			</div> 
+		</div>
+
+		<div class="slider_wrapper"> 
+			<ul class="slider owl-carousel">
+				<li class="slide_item">
+					<div class="slide_item_preview preview_prev">							
+						<div class="slide_item_preview_inner">
+							<h2>Project Title Three</h2>
+							<p>Printing, Graphic Design</p>	
+						</div>	
+						<img src="img/slider_next_img.png"/> 							
+					</div>
+					<div class="slide_item_content_center">
+						<h2>Project Title #1</h2>
+						<p>A creative agency that crafts innovative ideas into digital products!</p>
+						<a href="#"><span>Get started now</span></a> 
+					</div> 
+					<div class="slide_item_preview preview_next">
+						<img src="img/slider_next_img.png"/>
+						<div class="slide_item_preview_inner">
+							<h2>Project Title Two</h2>
+							<p>Printing, Graphic Design</p>	
+						</div>								
+					</div>
+					<div class="slide_img" style="background-image: url('img/banner1.jpg')">
+						<img src="img/banner1.jpg" alt="Banner"/>
+					</div>
+				</li>
+				
+				<li class="slide_item">
+					<div class="slide_item_preview preview_prev">							
+						<div class="slide_item_preview_inner">
+							<h2>Project Title One</h2>
+							<p>Printing, Graphic Design</p>	
+						</div>
+						
+						<img src="img/slider_next_img.png"/>	
+						
+					</div>
+					<div class="slide_item_content_center">
+						<h2>Project Title #2</h2>
+						<p>A creative agency that crafts innovative ideas into digital products!</p>
+						<a href="#"><span>Get started now</span></a>
+					</div> 
+					<div class="slide_item_preview preview_next">
+						<img src="img/slider_next_img.png"/>
+						<div class="slide_item_preview_inner">
+							<h2>Project Title Three</h2>
+							<p>Printing, Graphic Design</p>	
+						</div>								
+					</div>
+					<div class="slide_img" style="background-image: url('img/banner2.jpg')">
+						<img src="img/banner2.jpg" alt="Banner"/>
+					</div> 
+				</li>
+
+				<li class="slide_item">
+					<div class="slide_item_preview preview_prev">							
+						<div class="slide_item_preview_inner">
+							<h2>Project Title Two</h2>
+							<p>Printing, Graphic Design</p>	
+						</div>	
+						<img src="img/slider_next_img.png"/> 							
+					</div>
+					<div class="slide_item_content_center">
+						<h2>Project Title #3</h2>
+						<p>A creative agency that crafts innovative ideas into digital products!</p>
+						<a href="#"><span>Get started now</span></a>
+					</div> 
+					<div class="slide_item_preview preview_next">
+						<img src="img/slider_next_img.png"/>
+						<div class="slide_item_preview_inner">
+							<h2>Project Title Four</h2>
+							<p>Printing, Graphic Design</p>	
+						</div>								
+					</div>
+					<div class="slide_img" style="background-image: url('img/banner3.jpg')">
+						<img src="img/banner3.jpg" alt="Banner"/>
+					</div>
+				</li>
+
+				<li class="slide_item">
+					<div class="slide_item_preview preview_prev">							
+						<div class="slide_item_preview_inner">
+							<h2>Project Title Three</h2>
+							<p>Printing, Graphic Design</p>	
+						</div>	
+						<img src="img/slider_next_img.png"/> 							
+					</div>
+					<div class="slide_item_content_center">
+						<h2>Project Title #4</h2>
+						<p>Printing, Grahic Design</p>
+						<a href="#"><span>Get started now</span></a>
+					</div> 
+					<div class="slide_item_preview preview_next">
+						<img src="img/slider_next_img.png"/>
+						<div class="slide_item_preview_inner">
+							<h2>Project Title Five</h2> 
+							<p>Printing, Graphic Design</p>	
+						</div>								
+					</div>
+					<div class="slide_img" style="background-image: url('img/banner4.jpg')">
+						<img src="img/banner4.jpg" alt="Banner"/>
+					</div>
+				</li>
+
+				<li class="slide_item">
+					<div class="slide_item_preview preview_prev">							
+						<div class="slide_item_preview_inner">
+							<h2>Project Title Four</h2>
+							<p>Printing, Graphic Design</p>	
+						</div>	
+						<img src="img/slider_next_img.png"/> 							
+					</div>
+					<div class="slide_item_content_center">
+						<h2>Project Title #5</h2> 
+						<p>Web site, e-commerce</p>
+						<a href="#"><span>Get started now</span></a>
+					</div> 
+					<div class="slide_item_preview preview_next">
+						<img src="img/slider_next_img.png"/>
+						<div class="slide_item_preview_inner">
+							<h2>Project Title One</h2>
+							<p>Web site, e-commerce</p>	
+						</div>								
+					</div>
+					<div class="slide_img" style="background-image: url('img/banner5.jpg')">
+						<img src="img/banner5.jpg" alt="Banner"/>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="main">		
+			
+			
+			<div class="carousel_section">	
+				<div class="carousel_section_inner">		
+					<h2 class="carousel_section_title">our best projects</h2>
+					<h3 class="carousel_section_caption">We are a full-service cretive studio delivering any kind of visual content and digital solutions</h3>
+					
+
+					<div class="projects_carousel owl-carousel">
+						<div class="projects_carousel_item">	
+							<div class="projects_carousel_inner">						
+								<div class="project_carousel owl-carousel">  
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project1.jpg" alt="Banner"/>
+										</a>
+									</div> 	
+																								
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project2.jpg" alt="Banner"/>
+										</a>
+									</div> 	
+
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project3.jpg" alt="Banner"/>
+										</a>
+									</div> 		
+
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project1.jpg" alt="Banner"/>
+										</a>
+									</div> 						
+								</div>
+								 
+								<div class="projects_carousel_item_info">
+									<h3 class="project_title">Project title one</h3>
+									<span class="project_caption">Printing, Graphic Design</span>
+								</div>	
+							</div> 
+						</div>												
+						
+						<div class="projects_carousel_item">	
+							<div class="projects_carousel_inner">						
+								<div class="project_carousel owl-carousel"> 
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project2.jpg" alt="Banner"/>
+										</a>
+									</div> 	
+
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project3.jpg" alt="Banner"/>
+										</a>
+									</div> 	
+
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project4.jpg" alt="Banner"/>
+										</a>
+									</div> 		
+
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project1.jpg" alt="Banner"/>
+										</a>
+									</div> 						
+								</div>
+								<div class="projects_carousel_item_info">
+									<h3 class="project_title">Project title two</h3>
+									<span class="project_caption">Web site, e-commerce</span>
+								</div>		
+							</div>
+						</div>				
+
+						<div class="projects_carousel_item">	
+							<div class="projects_carousel_inner">						
+								<div class="project_carousel owl-carousel"> 
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project3.jpg" alt="Banner"/>
+										</a>
+									</div> 	
+
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project4.jpg" alt="Banner"/>
+										</a>
+									</div> 	
+
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project1.jpg" alt="Banner"/>
+										</a>
+									</div> 		
+
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project2.jpg" alt="Banner"/>
+										</a>
+									</div> 						
+								</div>	
+								<div class="projects_carousel_item_info">
+									<h3 class="project_title">Project title three</h3>
+									<span class="project_caption">Web site, e-commerce</span>
+								</div>	
+							</div>
+						</div>				
+
+						<div class="projects_carousel_item">	
+							<div class="projects_carousel_inner">						
+								<div class="project_carousel owl-carousel"> 
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project4.jpg" alt="Banner"/>
+										</a>
+									</div> 	
+
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project1.jpg" alt="Banner"/>
+										</a>
+									</div> 	
+
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project2.jpg" alt="Banner"/>
+										</a>
+									</div> 		
+
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project3.jpg" alt="Banner"/>
+										</a>
+									</div> 						
+								</div>	
+								<div class="projects_carousel_item_info">
+									<h3 class="project_title">Project title four</h3>
+									<span class="project_caption">Web site, e-commerce</span>
+								</div>	
+							</div>
+						</div>				
+
+						<div class="projects_carousel_item">	
+							<div class="projects_carousel_inner">						
+								<div class="project_carousel owl-carousel"> 
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project1.jpg" alt="Banner"/>
+										</a>
+									</div> 	
+
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project2.jpg" alt="Banner"/>
+										</a>
+									</div> 	
+
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project3.jpg" alt="Banner"/>
+										</a>
+									</div> 		
+
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project4.jpg" alt="Banner"/>
+										</a>
+									</div> 						
+								</div>	
+								<div class="projects_carousel_item_info">
+									<h3 class="project_title">Project title five</h3>
+									<span class="project_caption">Web site, e-commerce</span>
+								</div>	
+							</div>
+						</div>				
+
+						<div class="projects_carousel_item">	
+							<div class="projects_carousel_inner">						
+								<div class="project_carousel owl-carousel"> 
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project2.jpg" alt="Banner"/>
+										</a>
+									</div> 	
+
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project3.jpg" alt="Banner"/>
+										</a>
+									</div> 	
+
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project4.jpg" alt="Banner"/>
+										</a>
+									</div> 		
+
+									<div class="project_carousel_item">
+										<a href="#" class="project_carousel_item_content">
+											<img src="img/project1.jpg" alt="Banner"/>
+										</a>
+									</div> 						
+								</div>	
+								<div class="projects_carousel_item_info">
+									<h3 class="project_title">Project title six</h3>
+									<span class="project_caption">Web site, e-commerce</span>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> 
+
+
+			<div class="about_us_section">
+				<div class="about_us_part">
+					<div class="about_us_img"><img src="img/about_us_img1.jpg"/></div>
+					<div class="about_us_content">
+						<div class="about_us_content_inner">
+							<h2 class="about_us_title">Who we are</h2>
+							<p class="about_us_description">We are a team of highly qualified enthusiasts in the applied psychology and behavioural economics fields. We provide companies and individuals with innovative approaches and methods in personal, team and organisational development.</p>
+							<a href="#" class="btn_primary about_us_btn">
+								<div class="btn_primary_inner">
+									<span class="btn_primary_text">Learn more</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					
+				</div>
+
+				<div class="about_us_part">
+					<div class="about_us_img"><img src="img/about_us_img2.jpg"/></div>	
+					<div class="about_us_content">					
+						<div class="about_us_content_inner">
+							<h2 class="about_us_title">What we do</h2>
+							<p class="about_us_description">We Make Forward-Thinking Products.Web, iOS, and the next generation of connected devices. We design and develop software for today’s users and tomorrow’s platforms.</p>
+							<a href="#" class="btn_primary about_us_btn">
+								<div class="btn_primary_inner">
+									<span class="btn_primary_text">Learn more</span>
+								</div>
+							</a>
+						</div>
+					</div> 
+									
+				</div>
+
+			</div>
+
+			<div class="faq_section">
+				<div class="faq_section_inner">
+					<div class="faq_section_left">
+						<h2 class="faq_section_title">Feedbacks</h2>
+						<p class="faq_section_description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos</p>
+
+						<ul class="faq_slider owl-carousel">
+							<li class="faq_slider_item">
+								<div class="faq_slider_item_content">
+									<div class="faq_avatar_wrap"><img src="img/avatar.png"/></div>								
+									<h5 class="person_name">Isabel Mack</h5>
+									<span class="person_position">Company owner</span>
+
+									<p class="person_feedback">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+								</div>								
+							</li>
+
+							<li class="faq_slider_item">
+								<div class="faq_slider_item_content">
+									<div class="faq_avatar_wrap"><img src="img/avatar.png"/></div>								
+									<h5 class="person_name">Isabel Mack</h5>
+									<span class="person_position">Company owner</span>
+
+									<p class="person_feedback">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+								</div>	
+							</li>
+
+							<li class="faq_slider_item">
+								<div class="faq_slider_item_content">
+									<div class="faq_avatar_wrap"><img src="img/avatar.png"/></div>								
+									<h5 class="person_name">Isabel Mack</h5>
+									<span class="person_position">Company owner</span>
+
+									<p class="person_feedback">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+								</div>	
+							</li>
+						</ul>
+					</div>
+					<div class="faq_section_right">
+						<h2 class="faq_section_title">FAQ</h2>
+						<p class="faq_section_description">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam. Aaccusamus et iusto odio dignissimos ducimus qui blanditiis praesentium </p>
+						
+						<ul class="faq_accordion">
+							<li class="faq_accordion_item">
+								<div class="faq_accordion_item_content">
+									Sed ut perspiciatis unde omnis iste natus?
+									<span class="faq_accordion_toggle"></span>
+								</div>
+								
+								
+
+								<ul class="faq_accordion_level_2">
+									<li>1. Duis aute irure dolor in reprehenderit 100%</li>
+									<li>2. Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</li>
+								</ul>
+							</li>
+
+							<li class="faq_accordion_item">
+								<div class="faq_accordion_item_content">
+									Nemo enim ipsam voluptatem quia voluptas sit?
+									<span class="faq_accordion_toggle"></span>
+								</div>
+								<ul class="faq_accordion_level_2">
+									<li>1. Duis aute irure dolor in reprehenderit 100%</li>
+									<li>2. Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</li>
+								</ul>
+
+							</li>
+
+							<li class="faq_accordion_item">
+								<div class="faq_accordion_item_content">
+									Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur??
+									<span class="faq_accordion_toggle"></span>
+								</div>
+
+								<ul class="faq_accordion_level_2">
+									<li>1. Duis aute irure dolor in reprehenderit 100%</li>
+									<li>2. Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</li>
+									<li>1. Duis aute irure dolor in reprehenderit 100%</li>
+									<li>2. Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</li>
+									<li>1. Duis aute irure dolor in reprehenderit 100%</li>
+									<li>2. Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</li>
+									<li>1. Duis aute irure dolor in reprehenderit 100%</li>
+									<li>2. Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</li>
+								</ul>
+							</li>
+
+							<li class="faq_accordion_item">
+								<div class="faq_accordion_item_content">
+									Cepteur sint occaecat cupidatat non proident?
+									<span class="faq_accordion_toggle"></span>
+								</div>
+
+								<ul class="faq_accordion_level_2">
+									<li>1. Duis aute irure dolor in reprehenderit 100%</li>
+									<li>2. Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</li>
+								</ul>
+							</li>
+							
+							<li class="faq_accordion_item">
+								<div class="faq_accordion_item_content">
+									Finibus Bonorum et Malorum?
+									<span class="faq_accordion_toggle"></span>
+								</div>
+								<ul class="faq_accordion_level_2">
+									<li>1. Duis aute irure dolor in reprehenderit 100%</li>
+									<li>2. Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</li>
+								</ul>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="contact_section">
+				<div class="contact_section_inner">
+					<h2 class="contact_section_title">Let’s chat!</h2>
+					<h3 class="contact_section_caption">Give us a shout and we will contact you shortly</h3>
+
+					<form action="index.php" method="post">						
+						<input type="text" class="contact_name" name="name" maxlength="30" placeholder="Name">
+						<input type="text" class="contact_email" name="email" maxlength="30" placeholder="E-mail">
+						<textarea class="contact_message" placeholder="Message" ></textarea>
+						<button class="btn_primary contact_submit">
+							<div class="btn_primary_inner">
+								<span class="btn_primary_text">Send message</span>
+							</div>
+						</button>
+					</form>
+
+				</div>
+			</div>
+		</div>	<!-- end main -->
+
+		<div class="footer_wrapper">	
+			<div class="footer">		
+				<div class="copyright">
+					<a href="#" class="copyright_logo"><img src="img/footer_logo.png"/></a>
+					<span class="copyright_content">&copy; 2016. All rights reserved</span>
+				</div>
+				<div class="footer_contact">
+					<span class="footer_contact_tel">+1 2345 6789</span>
+					<a class="footer_contact_email">hello@yourdomain.com</a>
+				</div>
+
+				<div class="footer_social">
+					<ul class="social">
+						<li class="social_item facebook"><a target="_blank" href="http:/google.com"></a></li>
+						<li class="social_item instagram"><a href="#"></a></li>
+						<li class="social_item twitter"><a href="#"></a></li>
+					</ul>
+				</div>
+			</div> 
+		</div>
+
+		<script>			
+			$(document).ready(function(){
+				$('.projects_carousel.owl-carousel').owlCarousel({
+					autoplay: true,
+					nav: true, 
+					mouseDrag: false,
+					loop: true, 
+
+					responsiveClass:true,
+				    responsive:{
+				        0:{
+				            items: 1,
+				            nav: false,
+				            mouseDrag: true,
+				            stagePadding: 50,
+				            margin: 10, 
+				        },
+				        768:{ 
+				            items:3,
+				        },
+				        1000:{
+				            items:4,
+				            nav:true,
+				            
+				        }
+				    }
+				});
+				$('.project_carousel.owl-carousel').owlCarousel({
+					autoplay: false,
+					items: 1,
+					nav: true,
+					mouseDrag: false, 
+					loop: true,
+
+					responsive:{
+				        0:{
+				          // autoplay: false,
+				          touchDrag: false,
+				          mouseDrag: false,
+
+				        },
+				        768:{ 
+				            
+				        },
+				        1000:{
+				            
+				            
+				        }
+				    }
+
+				});
+
+				$('.slider.owl-carousel').owlCarousel({
+					autoplay: true,
+					items: 1,
+					nav: true,
+					mouseDrag: true, 
+					loop:true,
+
+					responsive:{
+				        0:{
+				          // autoplay: false,
+				           stagePadding: 40,
+
+				        },
+				        768:{ 
+				            
+				        },
+				        1000:{				            
+				            
+				        }
+				    }
+
+				});
+				$('.faq_slider.owl-carousel').owlCarousel({
+					autoplay: true,
+					items: 1,
+					nav: true,
+					mouseDrag: false, 
+					loop:true,
+
+					responsive:{
+				        0:{
+				          // autoplay: false,
+				           stagePadding: 40, 
+
+				        },
+				        768:{ 
+				            
+				        },
+				        1000:{				            
+				            
+				        }
+				    }
+
+				});
+			});  
+
+			$(document).ready(function(){
+
+				// $('.slider').slick({
+				// 	slidesToShow: 1,
+				// 	autoplay: false,
+				// 	responsive: [
+				//     {
+				//       breakpoint: 768,
+				//       settings: {
+				//         centerMode: true,
+				//         centerPadding: '40px',
+		
+				//       }
+				//     }
+				//     ]
+				// });
+				
+				// $('.projects_carousel').slick({
+				// 	 slidesToShow: 4,
+  				// slidesToScroll: 1
+				// });
+				// $('.project_carousel').slick({
+				// 	slidesToShow: 1,
+				// 	draggable: false, 
+				// 	// autoplay: true,
+				// });
+
+
+
+
+
+
+				// $('.faq_slider').slick({
+				// 	slidesToShow: 1,
+
+				// 	responsive: [
+				//     {
+				//       breakpoint: 768,
+				//       settings: {
+				//         centerMode: true,
+				//         centerPadding: '40px',
+		
+				//       }
+				//     }
+				//     ]
+				
+				// });
+				
+			});
+
+ 
+
+		</script> 
+		<script src="js/main.js"></script> 
+
+
+		
+	</body>
+</html>

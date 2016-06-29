@@ -1,0 +1,250 @@
+.faq_section {
+	background: #ebeef2;
+	padding: 80px 0;
+	
+	@include media(moreThanMobile) {
+		&.in_view .faq_section_inner {
+			transform: translateY(0);	
+    	}
+	}
+
+	@include media(mobile) {
+		padding: 6% 0;
+	}
+
+
+	.faq_section_inner {
+		@extend %clearfix; 
+	
+		@include media(moreThanMobile) {
+			transform: translateY(140px);
+			transition: 1.5s;
+			@include site_width;
+			
+		} 
+	}
+	.faq_section_left {
+		float: left;
+		width: 48%;
+
+		@include media(mobile) {
+			float: none;
+			width: 100%;
+			margin-bottom: 50px;
+		}
+	}
+	.faq_section_right {
+		float: right;
+		width: 48%;
+
+		@include media(mobile) {
+			float: none;
+			width: 100%;
+		}
+	}
+	.faq_section_title {
+		font-size: $large_font_size;
+		text-transform: uppercase;
+		margin-bottom: 25px;
+
+		@include media(mobile) {
+			width: 87.5%;
+			margin: 0 auto 20px auto;
+		}
+	} 
+	.faq_section_description {
+		font-size: $medium_font_size;
+		line-height: 20px;
+		color: #777777;
+
+		@include media(mobile) {
+			width: 87.5%;
+			margin: 0 auto 20px auto;
+		}
+
+
+	}
+
+	.faq_slider {
+		position: relative;
+		margin-top: 50px;
+
+		@include media(mobile) {
+			margin-top: 5%;
+
+			.owl-item {
+				transform: scale(0.92);
+				transition:  .4s; 
+
+				&.active {
+					transform: scale(1);
+				}
+			}
+
+			&:before, &:after {
+				content: "";
+			    height: 100%;
+			    position: absolute;
+			    top: 0;
+			    width: 12%;
+			    z-index: 2;
+			}
+			&:before  {
+				left: -1%;
+    			background-image: linear-gradient(to right, #ebeef2, transparent);
+			}
+			&:after  {
+				right: -1%;
+    			background-image: linear-gradient(to right, transparent, #ebeef2);
+			}
+		}
+		
+		
+		.faq_slider_item {
+			position: relative;
+			
+			text-align: center;
+			
+			.faq_slider_item_content {
+				background: #fff;
+				margin-top: 55px;
+				padding: 0 30px 70px 30px; 
+
+				@include media(mobile) {
+					padding: 0 20px 35px;
+				}
+			}
+			.faq_avatar_wrap {	
+				display: inline-block;			
+				width: 113px;
+				height: 113px;
+				border-radius: 113px;	
+				overflow: hidden; 
+				//transform: translateY(-50px);	
+				margin-top: -50px;		
+			    padding: 5px;
+			    background: #ebeef2;
+			    box-sizing: content-box;
+			}
+			.person_name {
+
+			}
+			.person_position {
+				display: block;
+				position: relative;
+				margin-bottom: 30px;
+				color: #898989;
+ 
+				@include sprite_absolute ($zz, before, auto, auto,-20px,50%,none,0 0 0 -12px);				
+			}
+			
+			.person_feedback {
+				text-align: left;
+				color: #898989;
+			}
+		}
+
+		.slick-arrow, .owl-nav div { 
+			position: absolute;
+			top: 60px;
+			z-index: 2;
+			font-size: 0; 
+			width: 30px;
+			height: 30px;
+			transition: .3s;
+			cursor: pointer;
+			
+			@include media(moreThanMobile) {
+				&:hover {	
+					background: #cb0a27;				
+					&:before {
+						color: #fff;
+					}			
+				}
+			}
+			@include media(mobile) {
+				display: none!important;
+			}
+			
+		}
+		.slick-prev, .owl-prev {
+			right: 45px;
+			
+			@include fa_absolute ($fa-var-angle-left,before,35px,#cb0a27,50%,auto,auto,50%); 
+			
+
+			
+		}
+
+		.slick-next, .owl-next {
+			right: 10px;
+			
+			@include fa_absolute ($fa-var-angle-right,before,35px,#cb0a27,50%,auto,auto,50%);  
+		}
+	}
+	.faq_accordion {
+		margin-top: 25px;
+
+
+		.faq_accordion_item {		
+			margin-bottom: 12px;			
+			padding: 20px 40px 20px 30px;
+			background: #fff;
+			font-size: 15px;
+			
+			.faq_accordion_item_content {
+				position: relative;
+				font-weight: bold;
+			}
+			.faq_accordion_toggle {
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				margin-top: -10px;
+				top: 50%; 
+				right: -25px;
+				cursor: pointer; 				
+				
+				&:before, &:after {
+					content: '';
+					position: absolute; 
+					background: #cb0a27; 
+					transition: transform .3s; 
+				}
+				&:after {					
+					width: 2px;
+					height: 20px;				
+					top: 0;
+					right: 9px; 
+				}
+
+				&:before {				
+					top: 50%; 
+					right: 0px;
+					width: 20px;
+					height: 2px;
+
+				}
+				&.active {
+					&:after {
+						transform: rotate(-90deg);
+					}
+				}
+			}
+		
+		}
+
+		.faq_accordion_level_2 {
+			transition: .3s ease;
+			max-height: 0; 		 	
+			overflow: hidden;
+			
+
+			&.active {
+				padding-top: 20px;
+				max-height: 1000px;
+
+			}
+		}
+	}
+}
