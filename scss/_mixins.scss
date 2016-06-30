@@ -65,7 +65,7 @@
 */
 
 
-@mixin am_font_absolute ($unicode:auto,$pseudo:before,$font_size:inherit,$color:inherit,$top:auto,$left:auto,$bottom:auto,$right:auto,$rotate:auto) {
+@mixin am_font_absolute ($unicode:auto,$pseudo:before,$font_size:inherit,$color:inherit,$top:auto,$right:auto,$bottom:auto,$left:auto,$rotate:auto) {
   &:#{$pseudo} {
     position: absolute;
     top: $top;
@@ -75,14 +75,20 @@
     font-family: 'am_font'; 
     content: $unicode;  
     font-size: $font_size;
-    color: $color;
+    color: $color;   
 
-    @if $left==50% {
+    @if ($left==50%) and ($top==50%) {
         transform: translate(-50%,-50%); 
+    }
+    @if ($top==50%) and not ($left==50%) { 
+        transform: translateY(-50%); 
+    }
+    @if ($left==50%) and not ($top==50%) { 
+        transform: translateX(-50%);  
     } 
     @if $rotate==180 {
-        transform: translate(-50%,-50%) rotate(-180deg); 
-    } 
+        transform: translate(-50%,-50%) rotate(-180deg);       
+    }  
   } 
 } 
 /* usage

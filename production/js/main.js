@@ -108,12 +108,9 @@
 	function removeScale(m) {
 		m.className = 'menu_icon_wrapper';
 	}
-
-
 })();
 
-
-
+// end burger animation
 
 $(document).ready(function(){
 	$('.menu_icon_trigger').click(function() {
@@ -156,141 +153,7 @@ $(document).ready(function(){
 	    bool_on_top = true;
 	  }
 	});
-
-	// $(".slick-prev").hover(function(){
-	//     //console.log('hover');
-	//     $(this).parent().find('.slick-active .preview_prev').addClass('active');
-	// },function(){
-	//     //console.log('stop');
-	//     $(this).parent().find('.slick-active .preview_prev').removeClass('active');
-	// });
-	// $(".slick-next").hover(function(){
-	//     //console.log('hover');
-	//     $(this).parent().find('.slick-active .preview_next').addClass('active');
-	// },function(){
-	//     //console.log('stop');
-	//     $(this).parent().find('.slick-active .preview_next').removeClass('active');
-	// });
-	// $(".slick-prev, .slick-next").click(function(){
-	// 	$(this).parent().find('.slick-active .preview_next').removeClass('active');
-	// });
-
-	// $(".slick-prev").hover(function(){
-	//     console.log('hover');
-	//     $(this).parent().find('.slick-active .preview_prev').addClass('active');
-	// },function(){
-	//     console.log('stop');
-	//     $(this).parent().find('.slick-active .preview_prev').removeClass('active');
-	// }); 
-
-	//  			slick HOVER prev-next
-
-	// $(".slick-prev").mouseenter(function(){
-	//    // console.log('hover');
-	//     $(this).parent().find('.slick-active .preview_prev').addClass('active');	    
-	// });
-	// $(".slick-next").mouseenter(function(){
-	//     //console.log('hover');
-	//     $(this).parent().find('.slick-active .preview_next').addClass('active');	    
-	// });
-	// $('.slide_item_preview').mouseleave(function(){
- //   		// console.log('stop');
- //    	$(this).removeClass('active');
-	// });
-	// $(".slick-next").click(function() {
-	// 	$(this).parent().find('.preview_next').removeClass('active');
-	// });
-	// $(".slick-prev").click(function() {
-	// 	$(this).parent().find(' .preview_prev').removeClass('active');
-	
-	// });
- 
-  // last version
-
-	// $slider_prev_btn = $('.owl-prev');
-	// $slider_next_btn = $('.owl-next');
-	// // $(".slick-prev")
-	// // find('.slick-active .preview_prev')
-
-	// $slider_prev_btn.mouseenter(function(){
-	  
-	//     $(this).closest('.slider').find('.owl-item.active .preview_prev').addClass('active');	    
-	// });
-	// $slider_next_btn.mouseenter(function(){
-	//     //console.log('hover');
-	//     $(this).closest('.slider').find('.owl-item.active .preview_next').addClass('active');	    
-	// });
-	// $('.slide_item_preview').mouseleave(function(){
- //   		// console.log('stop');
- //    	$(this).removeClass('active');
-	// });
-	// $slider_next_btn.click(function() {
-	// 	$(this).closest('.slider').find('.preview_next').removeClass('active');
-	// });
-	// $slider_prev_btn.click(function() {
-	// 	$(this).closest('.slider').find(' .preview_prev').removeClass('active');	
-	// });
-
-	// $(window).mouseleave(function(){
-	// 	$(' .preview_prev, .preview_next').removeClass('active');
-	// });
-
-  
-
 });
-
-$class_to_destroy = '.project_carousel';
-$obj_to_destroy = $($class_to_destroy); 
-//console.log($obj_to_destroy) ;
-
-
-//$('.project_carousel.owl-carousel').data('owlCarousel').destroy();  
-//$obj_to_destroy.removeClass('owl-carousel'); 
-
-
-
-// $(document).ready(owl_destroy_function);
-// $(window).on('resize', owl_destroy_function); 
-// $bp_mobile = 768;
-// var resize_desk_bool = true;
-// var resize_mob_bool = true;
-
-// function owl_destroy_function() { 
-// 	if ($(window).width() > $bp_mobile) {  
-// 		resize_mob_bool = true;
-// 		if (resize_desk_bool) {
-// 			console.log('desk')
-
-// 		}
-// 		resize_desk_bool = false;
-		
-// 	} else {
-// 		resize_desk_bool = true;
-// 		if (resize_mob_bool) {
-// 			console.log('mob')
-// 			$obj_to_destroy.data('owlCarousel').destroy();  
-// 			$obj_to_destroy.removeClass('owl-carousel'); 
-
-// 		}
-// 		resize_mob_bool = false;
-// 	}
-// };
-
-
-// close quickview
-
-// $(document).click(function(event) { 
-//     if(!$(event.target).closest('.ui-dialog ').length &&
-//        !$(event.target).is('.ui-dialog ')) {
-//         if($('.ui-dialog ').is(":visible")) {
-//             $('.ui-dialog, .ui-widget-overlay').css('display', 'none');
-//         } 
-//     }         
-// }); 
-//  
-
-
-
 
 
 
@@ -310,9 +173,9 @@ $(window).scroll(function(event){
    lastScrollTop = st;
 });
 
+// end doc.ready
 
-
-var $animation_elements = $('.carousel_section, .about_us_section, .faq_section, .contact_section, .footer_wrapper');
+var $animation_elements = $('.carousel_section, .about_us_section .about_us_part, .faq_section, .contact_section, .footer_wrapper');
 var $window = $(window);
 
 function check_if_in_view() {
@@ -332,12 +195,10 @@ function check_if_in_view() {
     	if ((element_bottom_position >= window_top_position) &&
 	      (element_top_position <= window_bottom_position)) {
 	      $element.addClass('in_view');
-
 	    } else {
 	      //$element.removeClass('in_view');
 	    }
-    }
-	    
+    }	    
   });
 }
 
@@ -358,19 +219,19 @@ $('.slider.owl-carousel').on('initialized.owl.carousel',function(property){
 	if (matches) {
 	    num_of_curr_img_str = matches[0];
 	}
-	$('.slider .owl-controls').append(     
-	    '<div class="slide_item_preview preview_prev">' +							
-			'<div class="slide_item_preview_inner">' +
+	$('.slider .owl-prev').append(     
+	    '<div class="slide_preview preview_prev">' +							
+			'<div class="slide_preview_inner">' +
 				'<h2>Project Title #5</h2>' +
 				'<p>Printing, Graphic Design</p>' +
 			'</div>' +					
 			'<img src="img/slide_thumb_5.png"/>' +					
 		'</div>'
    );
- 	$('.slider .owl-controls').append(     
-	    '<div class="slide_item_preview preview_next">' +
+ 	$('.slider .owl-next').append(     
+	    '<div class="slide_preview preview_next">' +
 	    	'<img src="img/slide_thumb_2.png"/>' +								
-			'<div class="slide_item_preview_inner">' +
+			'<div class="slide_preview_inner">' +
 				'<h2>Project Title #2</h2>' +
 				'<p>Printing, Graphic Design</p>' +
 			'</div>' +					

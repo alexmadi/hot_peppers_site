@@ -12,12 +12,6 @@ html, body {
 .about_us_section {
 	//@extend %clearfix;
 	
-	@include media(moreThanMobile) {
-		&.in_view .about_us_content {
-			transform: translateY(0);	
-    	}
-	}
-
 	.about_us_part {
 		
 		@include media(desktop) {
@@ -48,7 +42,11 @@ html, body {
 			}
 		}
 
-		
+		@include media(moreThanMobile) {
+			&.in_view .about_us_content {
+				transform: translateY(0);	
+	    	}
+		}		
 	}
 }
 
